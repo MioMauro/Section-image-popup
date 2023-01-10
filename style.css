@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(black, blue);
+    height: 100vh;
+}
+
+#myImg{
+    padding: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#myImg:hover{
+    opacity: .5;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: radial-gradient(blue, black);
+    padding-top: 50px;
+    display: none;
+}
+
+#img{
+    margin:3rem auto;
+    width: 70%;
+    display: block;
+    min-width: 650px;
+    border-radius: 3rem;
+    animation: display 1s;
+}
+
+#description{
+    font-size: 2rem;
+    color: aliceblue;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    animation: display 1s ;
+}
+
+@keyframes display{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+#close{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+}
